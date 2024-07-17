@@ -1,7 +1,7 @@
 const validate = (register) => {
   const schema = {};
   schema.age = register("age", {
-    required: true,
+    required: false,
     max: 21,
     min: 3,
     maxLength: 2,
