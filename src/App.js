@@ -7,8 +7,12 @@
 //   SquarePen,
 // } from "lucide-react";
 import "./App.css";
-// import Sidebar, { SidebarItem } from "./Pages/Sidebar";
-import Studentprofile from "./Pages/Studentprofile";
+// import Teacherprofile from "./Teachercontent/Teacherprofile";
+import Createnotes from "./studentcontent/Createnotes";
+// import Studentprofile from "./studentcontent/Studentprofile";
+
+// import Sidebar, { SidebarItem } from "./studentcontent/Sidebar";
+
 // import Addteacher from "./Components/Addteacher";
 // import Admissionform from "./Components/Admissionform";
 
@@ -17,7 +21,10 @@ function App() {
     <div className="flex">
       {/* <Admissionform /> */}
       {/* <Addteacher /> */}
-      <Studentprofile />
+      {/* <Studentprofile /> */}
+      <Createnotes />
+
+      {/* <Teacherprofile /> */}
       {/* <Sidebar>
         <SidebarItem icon={<Home size={30} />} text="Home" alert />
         <SidebarItem
