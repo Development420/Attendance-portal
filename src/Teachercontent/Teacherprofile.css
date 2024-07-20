@@ -4,7 +4,7 @@ body,html{
 
 
 body{
-    background-color: #daa000;
+    background-color: rgb(30, 126, 111);
    font-family: montserrat;
    display: flex;
    justify-content: center;
@@ -34,7 +34,7 @@ font-size: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 12%;
+    /* padding-top: 12%; */
     /* padding-left: 12%; */
 }
 .user-card{
@@ -49,17 +49,19 @@ font-size: 100px;
     position: relative;
     overflow: hidden;
     box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+    height: 600px;
 }
 .user-card::before{
     position: absolute;
     content: "";
     height: 300%;
     width: 173px;
-    background: #262626;
-    top: -60px;
-    left: -125px;
+    /* background: #262626; */
+    background: rgb(13, 71, 63);
+    top: -150px;
+    left: -280px;
     z-index: 0;
-    transform: rotate(17deg);
+    transform: rotate(25deg);
 }
 .user-card-img{
     display: flex;
@@ -99,14 +101,18 @@ font-size: 100px;
     .user-card-img{
         margin-right: 20px;
         margin-bottom: 0;
+        border: 2px solid black;
+        /* margin-top: 40px; */
     }
     .user-card-info{
         text-align: left;
+        /* margin-top: 40px; */
     }
     .user-card-img img{
         width: 300px;
         height: 200px;
         object-fit: cover;
+        
     }
    }
    @media(max-width: 900px){
@@ -116,8 +122,9 @@ font-size: 100px;
     }
     .user-card::before{
         width: 300%;
-        height: 200px;
+        height: 250px;
         transform: rotate(0);
+        border-bottom: 3px solid black;
     }
     .user-card-info h2{
 margin-top: 25px;
@@ -128,5 +135,12 @@ font-size: 25px;
         margin-bottom: 15px;
         font-size: 18px;
     }
-    
+    .user-card-img{
+        /* padding-top: 10px; */
+        border: 2px solid black;
+    }
+    .user-card{
+
+        height: 650px ;
+    }
    }

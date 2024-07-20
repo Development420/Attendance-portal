@@ -7,8 +7,9 @@
 //   SquarePen,
 // } from "lucide-react";
 import "./App.css";
+import Login from "./Components/Login";
 // import Teacherprofile from "./Teachercontent/Teacherprofile";
-import Createnotes from "./studentcontent/Createnotes";
+// import Createnotes from "./studentcontent/Createnotes";
 // import Studentprofile from "./studentcontent/Studentprofile";
 
 // import Sidebar, { SidebarItem } from "./studentcontent/Sidebar";
@@ -22,8 +23,8 @@ function App() {
       {/* <Admissionform /> */}
       {/* <Addteacher /> */}
       {/* <Studentprofile /> */}
-      <Createnotes />
-
+      {/* <Createnotes /> */}
+      <Login />
       {/* <Teacherprofile /> */}
       {/* <Sidebar>
         <SidebarItem icon={<Home size={30} />} text="Home" alert />

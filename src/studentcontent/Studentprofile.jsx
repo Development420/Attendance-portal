@@ -1,8 +1,18 @@
-import { Heading } from "@chakra-ui/react";
-import React from "react";
+// import { Heading } from "@chakra-ui/react";
+import React, { useRef, useState } from "react";
 import "./Studentprofile.css";
-import profile from "../assest/profile.jpg";
+import profile from "../assest/profile.png";
 const Studentprofile = () => {
+  const inputRef = useRef(null);
+  const [image, setImage] = useState("");
+  const handleImageclick = () => {
+    inputRef.current.click();
+  };
+  const handleImagechange = (event) => {
+    const file = event.target.files[0];
+    console.log(file);
+    setImage(event.target.files[0]);
+  };
   return (
     <>
       {/* <div>
@@ -11,8 +21,18 @@ const Studentprofile = () => {
 
       <div className="wrapper">
         <div className="user-card">
-          <div className="user-card-img">
-            <img src={profile} alt="userimage" />
+          <div className="user-card-img" onClick={handleImageclick}>
+            {image ? (
+              <img src={URL.createObjectURL(image)} alt="" />
+            ) : (
+              <img src={profile} alt="userimage" />
+            )}
+            <input
+              type="file"
+              ref={inputRef}
+              onChange={handleImagechange}
+              style={{ display: "none" }}
+            />
           </div>
           <div className="user-card-info">
             <h2>monika</h2>
